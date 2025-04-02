@@ -1,4 +1,3 @@
-PopupBrowse
 
 const PopupBrowse =()=>{
     return(
