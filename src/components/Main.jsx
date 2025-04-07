@@ -1,5 +1,14 @@
-
+import React from 'react';
 import Column from './Column';
+
+// Массив статусов
+const statuses = [
+  "Без статуса",
+  "Нужно сделать",
+  "В работе",
+  "Тестирование",
+  "Готово",
+];
 
 const Main = ({ loading }) => {
   return (
@@ -13,14 +22,8 @@ const Main = ({ loading }) => {
             </div>
           ) : (
             <div className="main__content">
-              {[
-                "Без статуса",
-                "Нужно сделать",
-                "В работе",
-                "Тестирование",
-                "Готово",
-              ].map((title, i) => (
-                <Column loading={loading} title={title} key={i} />
+              {statuses.map((title) => (
+                <Column loading={loading} title={title} key={title} />
               ))}
             </div>
           )}

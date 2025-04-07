@@ -11,14 +11,10 @@ function App() {
 		},4000);
 	},[]);
 	return (
-		
-		 <body>
 		 <div className="wrapper">
 		<Header/>
-		
 		<Main loading={loading}/>
 		</div>
-		</body>
 	);
 };
 
